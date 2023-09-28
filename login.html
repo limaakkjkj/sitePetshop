@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="/imagens/logo.ico" type="image/x-icon">
+    <title>Petshop JL</title>
+</head>
+<body>
+    <!-- Painel de cadastro -->
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+          <form action="#">
+            <h1>Petshop JL</h1>
+            <div class="social-container">
+                <a href="#" class="social"><img src="/imagens/facebook.png" alt="facebook" class="facebook"></a>
+                <a href="#" class="social"><img src="/imagens/google.png" alt="google" class="google"></a>
+            </div>
+            <span>ou use seu email pessoal</span>
+            <input type="text" placeholder="Nome" />
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Senha" />
+            <button id="registerButton">Cadastrar</button>
+          </form>
+        </div>
+        <!-- Painel de login -->
+        <div class="form-container sign-in-container">
+          <form action="#">
+            <h1>Petshop JL</h1>
+            <div class="social-container">
+                <a href="#" class="social"><img src="/imagens/facebook.png" alt="facebook" class="facebook"></a>
+                <a href="#" class="social"><img src="/imagens/google.png" alt="google" class="google"></a>
+            </div>
+            <span>ou use seu email pessoal</span>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Senha" />
+            <a href="#">Esqueceu a senha?</a>
+            <button id="loginButton">Entrar</button>
+          </form>
+        </div>
+        <!-- Painel de login -->
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1>Bem-vindo(a) de volta!</h1>
+              <p>Entre com seu email já cadastrado</p>
+              <button class="ghost" id="signIn">Entrar</button>
+            </div>
+            <!-- Painel de cadastrar -->
+            <div class="overlay-panel overlay-right">
+              <h1>Oi, aumigo!</h1>
+              <p>Crie uma conta para comprar os melhores produtos para seu pet.</p>
+              <button class="ghost" id="signUp">Cadastrar</button>
+            </div>
+          </div>
+          <img src="/imagens/cachorro.png" alt="cachorro" class="aumigo">
+        </div>
+      </div>     
+      <script src="login.js"></script> 
+</body>
+</html>

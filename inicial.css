@@ -1,0 +1,169 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #100069;
+}
+
+/* Estilos para o cabeçalho sticky */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: #100069;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 1000; /* Para garantir que o cabeçalho fique na parte superior de outros elementos */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #296dff; /* Cor destacada ao passar o mouse */
+}
+
+/* Estilos para a logo no cabeçalho */
+nav img {
+    max-height: 40px; /* Ajuste a altura conforme necessário */
+    margin-left: 20px; /* Espaçamento à esquerda para separar a logo do texto */
+}
+
+/* Estilos para o espaço abaixo do cabeçalho sticky */
+/* Adicione margem superior ao conteúdo principal para evitar sobreposição */
+.main-content {
+    margin-top: 80px; /* Ajuste conforme necessário para a altura do cabeçalho */
+}
+
+
+/* Estilos para o banner */
+.banner img {
+    max-width: 100%;
+}
+
+/* Estilos para produtos e serviços */
+.produtos, .servicos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* Alinhe os produtos ao topo de cada fileira */
+    text-align: center;
+    padding: 0; /* Adicione um espaço interno na seção */
+}
+
+.produtos h2, .servicos h2 {
+    width: 100%; /* Garante que o texto ocupe toda a largura da seção */
+    margin: 0; /* Remova a margem do texto "Nossos Produtos" */
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: px;
+    font-family:'Lucida Sans';
+}
+
+
+.produto, .servico {
+    display: flex; /* Ativar flexbox */
+    flex-direction: column; /* Alinhar os itens verticalmente */
+    justify-content: center; /* Centralizar verticalmente */
+    align-items: center; /* Centralizar horizontalmente */
+    text-align: center;
+    background-color: rgba(111, 217, 255, 0.567);
+    height: 450px;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.505);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.497);
+}
+
+.produto hr {
+    width: 85%;
+    border: 1px solid rgba(0, 0, 0, 0.505);
+}
+
+
+/* Estilos para a imagem do produto (ajuste conforme necessário) */
+.produto img, .servico img {
+    max-width: 100%;
+    height: 350px;
+    display: flex; /* Ativar flexbox */
+    flex-direction: column; /* Alinhar os itens verticalmente */
+    justify-content: center; /* Centralizar verticalmente */
+    align-items: center; /* Centralizar horizontalmente */
+    border: 2px solid rgba(0, 0, 0, 0.505);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.549);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.497);
+}
+
+
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos para a barra de pesquisa */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 320px;
+}
+
+.search-bar input[type="text"] {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.search-bar button[type="submit"] {
+    background-color: #100069;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button[type="submit"]:hover {
+    background-color: #296dff;
+}
